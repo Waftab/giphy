@@ -48,8 +48,8 @@ In this unit, you will create a Giphy App. The Giphy App will take a search term
 ### Day 2 Goal 2: Add a click handler so the API request can use inputted data
 
 - [x ] Write a click handler for the "Searc" button and move your fetch request into the body
-- [ ] Declare a variable to save the user's input
-- [ ] Use string interpolation to update the request URL in your fetch request so a gif from the user's search term displays when the button is clicked
+- [x ] Declare a variable to save the user's input
+- [ x] Use string interpolation to update the request URL in your fetch request so a gif from the user's search term displays when the button is clicked
 
 ### Wrap
 
@@ -59,8 +59,8 @@ In this unit, you will create a Giphy App. The Giphy App will take a search term
 
 ### Day 3 Goal 1: Randomize the gif that is displayed
 
-- [ ] Declare a variable that stores a random number from 0 to the total number of items (different gifs) in the response
-- [ ] Update the request URL in your fetch request to display a random gif onto the screen
+- [ x] Declare a variable that stores a random number from 0 to the total number of items (different gifs) in the response
+- [x ] Update the request URL in your fetch request to display a random gif onto the screen
 
 ### Wrap
 

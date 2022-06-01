@@ -8,19 +8,27 @@ let url =
     meta:{},
     pagination:{},
   }
-fetch(url)
+  let input = $("input").val();
+  console.log("input: " + input);
+ let newUrl= "https://api.giphy.com/v1/gifs/search?q="+input+"&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1";
+fetch(newUrl)
   //step 1//
   .then(function (response) {
     return response.json();
   })
   // step 2//
   .then(function (giphy) {
-  let urlForGiphy= giphy.data[0].images.original.url;
+  console.log(giphy);
+   let num = Math.random()* giphy.data.length;
+  num = Math.floor(num);
+  console.log(num);
+  let urlForGiphy= giphy.data[num].images.original.url;
   console.log(urlForGiphy);
    $(".display").append(`<img src=${urlForGiphy}>`);
- let input = $("input").val();
-  return urlForGiphy;
+
+  //return urlForGiphy;
   });
-  
+ 
+
  
 });
